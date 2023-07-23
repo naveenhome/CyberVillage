@@ -21,7 +21,11 @@ public class TestStpes {
 	public void user_should_get(int arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
-		assertEquals(input,"2,3,1,+,+");
+		
+		//assertEquals(input,"2,3,1,+,+");
+		RPNCalcc obj = new RPNCalcc();
+		assertEquals(arg1,obj.ops(input));
+		// Something has changed
 	}
 
 }
